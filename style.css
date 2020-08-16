@@ -14,7 +14,7 @@
   
 .container {
     position: absolute;
-    max-width: 50px;
+    max-width: 100%;
             width: 50%;
             margin: 0 auto;
             position: relative;
