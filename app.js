@@ -1,5 +1,5 @@
 const form = document.querySelector('#inputs');
-const scoreText = document.querySelector('.scoreText');
+const scores = document.querySelector('.scores');
 const subValues = [];
 
 document.querySelector('#submit').addEventListener('click', (e) => {
@@ -14,14 +14,14 @@ document.querySelector('.addCourse').addEventListener('click', (e) => {
   e.preventDefault();
   generateElement();
   clearScores();
-  removeElement(scoreText);
+  removeElement(scores);
 });
 
 document.querySelector('.removeCourse').addEventListener('click', (e) => {
   e.preventDefault();
   removeElement(form);
   removeElement(form);
-  removeElement(scoreText);
+  removeElement(scores);
   clearScores();
 });
 
@@ -94,8 +94,8 @@ const generateElement = () => {
   subjectInput.setAttribute('max', '100');
   unitInput.setAttribute('type', 'number');
 
-  subjectInput.setAttribute('placeholder', 'Enter Subject Score Here');
-  unitInput.setAttribute('placeholder', 'Enter Course Unit Here');
+  subjectInput.setAttribute('placeholder', 'Enter Course Score');
+  unitInput.setAttribute('placeholder', 'Enter Course Unit');
 
   form.appendChild(subjectInput);
   form.appendChild(unitInput);
@@ -108,18 +108,18 @@ const removeElement = (element) => {
   }
 };
 
-//creates an heading element and appends it to the scoreText div.
+//creates an heading element and appends it to the scores div.
 const generateScoreElement = () => {
   const sum = document.createElement('h1');
   sum.textContent = `Your Grade Point is ${calculateScore()}`;
 
-  scoreText.appendChild(sum);
+  scores.appendChild(sum);
 };
 
 //Removes the result element if it already exists.
 const removeScoreElement = () => {
-  if (scoreText.childNodes.length > 1) {
-    scoreText.firstChild.remove();
+  if (scores.childNodes.length > 1) {
+    scores.firstChild.remove();
   }
 };
 
