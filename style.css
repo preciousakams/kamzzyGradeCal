@@ -1,17 +1,6 @@
-/* * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-  } */
-  
-  /* .header {
-    height: 15vh;
-    text-align: center;
-    background-color: #5bacf8;
-    padding-top: 30px;
-    color: #ffffff;
-  } */
-  
+.mirage{
+  padding: 100px;
+}
 .container {
     position: absolute;
     max-width: 100%;
