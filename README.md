@@ -7,7 +7,7 @@ Css
 Javascript
 
 
-### Demo Version: [https://brave-wright-719995.netlify.app/](https://brave-wright-719995.netlify.app/)
+### [Click For Live Version](https://brave-wright-719995.netlify.app/)
 ***
 
 ### Getting started
