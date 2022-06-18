@@ -1,5 +1,5 @@
 # kamzzyGradeCal
-A Grade Point Average (GPA) calculator based on  4.0 grading scale
+A Grade Point Average (GPA) calculator based on a 4.0 grading scale
 
 ## Built with
 Html
